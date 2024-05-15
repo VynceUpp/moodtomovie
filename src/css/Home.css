@@ -1,0 +1,79 @@
+.home {
+    background: url(../assets/266.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .info {
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+}
+
+.main .info h3 {
+    font-size: 30px;
+}
+
+.main .moodselection {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mood-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.mood-btn .moodbtn,
+.selected-mood .moodbtn,
+.moodbtn {
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #3f3f3f;
+    background: #0000009a;
+    cursor: pointer;
+}
+
+.mood-btn .moodbtn:hover,
+.selected-mood .moodbtn:hover,
+.moodbtn {
+    background: #8686869a;
+    transition: all 0.5s ease-in;
+}
+
+ .submitbtn {
+    background: blueviolet;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.submitbtn:hover {
+    opacity: 0.7;
+    transition: all 0.5s ease-in;
+}
