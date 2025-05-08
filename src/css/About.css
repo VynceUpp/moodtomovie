@@ -1,4 +1,73 @@
-.aboutbox {
-    color: #fff;
-    padding: 10px;
+/* About.css */
+
+/* Add any custom styles for the About page */
+.about-section {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom animation for skill bars */
+.skill-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(59, 130, 246, 0.8);
+  animation: fillBar 1.5s ease-out forwards;
+}
+
+@keyframes fillBar {
+  to {
+    width: var(--fill-percentage);
+  }
+}
+
+/* Custom styles for social links hover effects */
+.social-link {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Make sure the gradient background covers the full height */
+body, html {
+  min-height: 100%;
+}
+
+/* Adding some depth to cards */
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
