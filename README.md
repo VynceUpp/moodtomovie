@@ -28,7 +28,7 @@ Follow the steps below to get your development environment set up:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/mood-based-movie-selector.git
+    git clone https://github.com/your-username/moodtomovie.git
     cd moodtomovie
     ```
 
