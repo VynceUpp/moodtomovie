@@ -1,75 +1,85 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# MoodtoMovie Selection Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based platform that helps users find movies to watch based on their mood. The app fetches movie recommendations from The Movie Database (TMDb) and provides a dynamic, responsive interface that adapts to various screen sizes. Whether you're feeling happy, adventurous, or nostalgic, this platform helps you discover the perfect movie to match your mood!
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Mood-Based Movie Selection**: Choose a mood, and the platform will suggest movies that fit that mood.
+- **Movie Carousel**: A responsive carousel to display movies with smooth transitions, movie titles, vote averages, release dates, and overviews.
+- **Hover Interaction**: Displays a movie’s overview when hovering over the movie card.
+- **Responsive Design**: Adjusts the number of visible movies based on screen size (1 movie on mobile, 4 on medium screens, up to 10 on larger screens).
+- **Popular Movies**: Browse popular movies based on different moods.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can try the live demo of the project [here](https://moodtomovie.vercel.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+Before you begin, ensure you have met the following requirements:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (version 14 or above)
+- **npm** (Node Package Manager)
+- **React** (version 17 or above)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow the steps below to get your development environment set up:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/mood-based-movie-selector.git
+    cd moodtomovie
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+3. **Create an `.env` file** in the root directory and add your TMDb API key:
+    ```
+    REACT_APP_TMDB_API_KEY=your_api_key
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the development server**:
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## TMDb API Key
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project relies on the TMDb API to fetch movie data. You can get your API key by signing up for a free account on [TMDb](https://www.themoviedb.org/).
 
-## Learn More
+## Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To contribute to this project, follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Fork the repository** to your own GitHub account.
+2. **Clone your forked repository** locally.
+3. **Create a new branch** to work on a specific feature or bug fix:
+    ```bash
+    git checkout -b your-feature-name
+    ```
+4. **Make your changes** and commit them:
+    ```bash
+    git commit -m "Describe your changes"
+    ```
+5. **Push your changes** to your forked repository:
+    ```bash
+    git push origin your-feature-name
+    ```
+6. **Create a pull request** to submit your changes.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you'd like to contribute to the development of this project, feel free to fork the repository and submit pull requests. Please make sure to test your changes thoroughly before submitting them.
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# moodtomovie
-This is a website that suggests movies to user based on the predefined moods. {REACT}
->>>>>>> 2262fb539c13b53788f6f4d7e3338cde2889f516
+- **React**: JavaScript library for building user interfaces.
+- **TMDb API**: For fetching movie data.
+- **Tailwind CSS**: For utility-first CSS styling.
+- **CSS**: Though i am slowly updating it to get rid of the old css and completely move on to tailwindcss
